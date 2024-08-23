@@ -1,3 +1,5 @@
+import br.edu.umfg.dip.PrincipioDeInversaoDeDependencia;
+import br.edu.umfg.isp.PrincipioDeSegregacaoDeInterfaces;
 import br.edu.umfg.lsp.PrincipioDeSubstituicaoDeLiskov;
 import br.edu.umfg.ocp.PrincipioAbertoFechado;
 import br.edu.umfg.srp.PrincipioDeReponsabilidadeUnica;
@@ -33,9 +35,20 @@ public class Main {
         System.out.println("\n");
 
         System.out.println("ISP");
+        System.out.println("Legado");
+        PrincipioDeSegregacaoDeInterfaces.executarLegado();
+        System.out.println("\n");
+        System.out.println("Refatorado");
+        PrincipioDeSegregacaoDeInterfaces.executarRefatorado();
+        System.out.println("\n");
         System.out.println("\n");
 
         System.out.println("DIP");
+        System.out.println("Legado");
+        PrincipioDeInversaoDeDependencia.executarLegado();
+        System.out.println("\n");
+        System.out.println("Refatorado");
+        PrincipioDeInversaoDeDependencia.executarRefatorado();
         System.out.println("\n");
     }
 
